@@ -10,6 +10,7 @@ export default class App extends Component {
                         <li><IndexLink to="/" activeClassName="hover">Home</IndexLink></li>
                         <li><Link to="articles" activeClassName="hover">Articles</Link></li>
                         <li><Link to="about" activeClassName="hover">About Us</Link></li>
+                        <div className="clearfix"></div>
                     </ul>
                 </header>
                 <div className="body">
