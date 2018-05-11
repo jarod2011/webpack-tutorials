@@ -10,18 +10,20 @@ export default class Articles extends Component {
         }
     }
     componentWillMount() {
-        let list = [{
-            title: 'articles 1',
-            content: 'This is articles 1'
-        }, {
-            title: 'articles 2',
-            content: 'This is articles 2'
-        }, {
-            title: 'articles 3',
-            content: 'This is articles 3'
-        }];
-        this.setState({
-            articles: list
+        fetch('/articles.json', {
+            method: 'GET',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: "same-origin"
+        }).then((response) => {
+            return response.json();
+        }).then((json) => {
+            this.setState({
+                articles: json
+            });
+        }).catch((err) => {
+            console.error('载入文章失败');
         });
     }
     render() {
