@@ -1,0 +1,38 @@
+{
+  "name": "lesson_3",
+  "version": "1.0.0",
+  "description": "关于react router v4的按需加载",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarod2011/webpack-tutorials.git"
+  },
+  "author": "Jarod2011",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarod2011/webpack-tutorials/issues"
+  },
+  "homepage": "https://github.com/jarod2011/webpack-tutorials#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jsx": "^0.9.89",
+    "jsx-loader": "^0.13.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}
